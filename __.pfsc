@@ -1,0 +1,20 @@
+deps = {
+    "gh.pfsc_example.min1": "v0.1.0",
+}
+
+from gh.pfsc_example.min1 import Pf
+
+deduc X1 of Pf.S {
+
+    asrt A1 {
+        en = "A thing that helps to clarify"
+    }
+
+    asrt A2 {
+        en = "Another thing"
+    }
+
+    meson = "
+    Pf.S by A1 and A2 and Pf.R.
+    "
+}
